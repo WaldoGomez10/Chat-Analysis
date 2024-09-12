@@ -171,7 +171,7 @@ emoji_df = pd.DataFrame(emoji_diccionario, columns=['Emoji', 'Cantidad'])
 emoji_df = emoji_df.set_index('Emoji').head(15)
 
 print('Número emojis únicos usados: ', len(emoji_df), '\n')
-emoji_df
+#emoji_df
 
 # Plotear el pie de los emojis más usados
 fig = px.pie(emoji_df, values='Cantidad', names=emoji_df.index, hole=.3, template='plotly_dark', color_discrete_sequence=px.colors.qualitative.Pastel2)
@@ -375,7 +375,7 @@ fig = px.line(date_df, x='DiaSemana', y='# Mensajes por día', color_discrete_se
 fig.update_traces(mode='markers+lines', marker=dict(size=10))
 fig.update_xaxes(title_text='Día', tickangle=30)
 fig.update_yaxes(title_text='# Mensajes',range=[6000, 12000])
-fig.show()
+#fig.show()
 
 # Crear una columna de 1 para realizar el conteo de mensajes
 df['# Mensajes por día'] = 1
