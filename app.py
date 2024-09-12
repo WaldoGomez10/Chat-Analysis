@@ -26,6 +26,8 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS
 
+import streamlit as st
+
 from google.colab import drive
 drive.mount('/content/drive')
 
