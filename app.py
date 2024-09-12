@@ -157,7 +157,7 @@ with col1:
 ###################################
 ###################################
 
-"""#### Emojis más usados"""
+#### Emojis más usados"""
 
 # Obtener emojis más usados y las cantidades en el chat del grupo del dataframe
 emojis_lista = list([a for b in df.Emojis for a in b])
@@ -217,7 +217,7 @@ with col2:
 ###################################
 ###################################
 
-"""#### Estadísticas por miembro"""
+#### Estadísticas por miembro"""
 
 # Separar mensajes (sin multimedia) y multimedia (stickers, fotos, videos)
 multimedia_df = df[df['Mensaje'] == '<Multimedia omitido>']
@@ -317,13 +317,13 @@ def create_range_hour(hour):
 
 # # Apply the function to create the "Range Hour" column
 df['rangoHora'] = df['rangoHora'].apply(create_range_hour)
-df
+#df
 
 df['DiaSemana'] = df['Fecha'].dt.strftime('%A')
 mapeo_dias_espanol = {'Monday': '1 Lunes','Tuesday': '2 Martes','Wednesday': '3 Miércoles','Thursday': '4 Jueves',
                       'Friday': '5 Viernes','Saturday': '6 Sábado','Sunday': '7 Domingo'}
 df['DiaSemana'] = df['DiaSemana'].map(mapeo_dias_espanol)
-df
+#df
 
 #### Número de mensajes por rango de hora"""
 
