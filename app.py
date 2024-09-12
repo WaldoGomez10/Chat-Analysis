@@ -448,7 +448,7 @@ stopwords = STOPWORDS.update(['que', 'qué', 'con', 'de', 'te', 'en', 'la', 'lo'
                               'esa','ahi','pa','ir','muy','asi','sé','vi','ti','ni','va','ve','sin','jajaja','está','tiene','sii','era','fue','dice',
                               'jajajaja'])
 
-mask = np.array(Image.open(url + 'heart.jpg')) #para tener una mascara en forma de corazon
+mask = np.array(Image.open('heart.jpg')) #para tener una mascara en forma de corazon
 
 # Obtener y acumular todas las palabras de cada mensaje
 for mensaje in mensajes_df['Mensaje'].values:
