@@ -146,7 +146,6 @@ estadistica_df = pd.DataFrame(estadistica_dict, columns = ['Tipo', 'Cantidad'])
 
 # Establecer la columna Tipo como índice
 estadistica_df = estadistica_df.set_index('Tipo')
-estadistica_df
 
 ###################################
 ###################################
@@ -178,11 +177,11 @@ emoji_df
 fig = px.pie(emoji_df, values='Cantidad', names=emoji_df.index, hole=.3, template='plotly_dark', color_discrete_sequence=px.colors.qualitative.Pastel2)
 fig.update_traces(textposition='inside', textinfo='percent+label')
 fig.update_layout(
-"""     title={'text': '🤗 Emojis que más usamos', 
-           'y':0.96, 
-           'x':0.5, 
-           'xanchor': 'center'}, 
-           font=dict(size=17) """
+#     title={'text': '🤗 Emojis que más usamos', 
+#           'y':0.96, 
+#           'x':0.5, 
+#           'xanchor': 'center'}, 
+#           font=dict(size=17) 
            )
 #fig.show()
 
@@ -199,10 +198,10 @@ fig.update_layout(
 ###################################
 ###################################
 
-"""## Paso 4: Estadísticas de los miembros del grupo
+## Paso 4: Estadísticas de los miembros del grupo
 
 #### Miembros más activos
-"""
+
 
 # Determinar los miembros más activos del grupo
 df_MiembrosActivos = df.groupby('Miembro')['Mensaje'].count().sort_values(ascending=False).to_frame()
@@ -305,7 +304,7 @@ with col2:
 ###################################
 ###################################
 
-"""## Paso 5: Estadísticas del comportamiento del grupo"""
+## Paso 5: Estadísticas del comportamiento del grupo"""
 
 df['rangoHora'] = pd.to_datetime(df['Hora'], format='%H:%M')
 
@@ -326,7 +325,7 @@ mapeo_dias_espanol = {'Monday': '1 Lunes','Tuesday': '2 Martes','Wednesday': '3 
 df['DiaSemana'] = df['DiaSemana'].map(mapeo_dias_espanol)
 df
 
-"""#### Número de mensajes por rango de hora"""
+#### Número de mensajes por rango de hora"""
 
 # Crear una columna de 1 para realizar el conteo de mensajes
 df['# Mensajes por hora'] = 1
@@ -407,7 +406,7 @@ st.plotly_chart(fig)
 ###################################
 ###################################
 
-"""#### Número de mensajes a través del tiempo"""
+#### Número de mensajes a través del tiempo"""
 
 # Crear una columna de 1 para realizar el conteo de mensajes
 df['# Mensajes por día'] = 1
@@ -437,7 +436,7 @@ st.plotly_chart(fig)
 ###################################
 ###################################
 
-"""#### Word Cloud de palabras más usadas"""
+#### Word Cloud de palabras más usadas"""
 
 # Crear un string que contendrá todas las palabras
 total_palabras = ' '
