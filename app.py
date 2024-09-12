@@ -96,15 +96,15 @@ df = df.dropna()
 
 # Resetear el índice
 df.reset_index(drop=True, inplace=True)
-df
+#df
 
-"""#### Filtrar el chat por fecha de acuerdo a lo requerido"""
+#### Filtrar el chat por fecha de acuerdo a lo requerido
 
 start_date = '2018-09-09'
 end_date = '2024-05-11'
 
 df = df[(df['Fecha'] >= start_date) & (df['Fecha'] <= end_date)]
-df
+#df
 
 ##################################################################
 # ### Paso 3: Estadísticas de mensajes, multimedia, emojis y links
