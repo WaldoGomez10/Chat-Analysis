@@ -208,7 +208,7 @@ df_MiembrosActivos = df.groupby('Miembro')['Mensaje'].count().sort_values(ascend
 df_MiembrosActivos.reset_index(inplace=True)
 df_MiembrosActivos.index = np.arange(1, len(df_MiembrosActivos)+1)
 df_MiembrosActivos['% Mensaje'] = (df_MiembrosActivos['Mensaje'] / df_MiembrosActivos['Mensaje'].sum()) * 100
-df_MiembrosActivos
+#df_MiembrosActivos
 
 ###################################
 ###################################
@@ -226,7 +226,7 @@ mensajes_df = df.drop(multimedia_df.index)
 # Contar la cantidad de palabras y letras por mensaje
 mensajes_df['Letras'] = mensajes_df['Mensaje'].apply(lambda s : len(s))
 mensajes_df['Palabras'] = mensajes_df['Mensaje'].apply(lambda s : len(s.split(' ')))
-mensajes_df.tail()
+#mensajes_df.tail()
 
 # Obtener a todos los miembros
 miembros = mensajes_df.Miembro.unique()
@@ -280,7 +280,7 @@ miembro_stats_df['Multimedia'] = miembro_stats_df['Multimedia'].apply(int)
 miembro_stats_df['Emojis'] = miembro_stats_df['Emojis'].apply(int)
 miembro_stats_df['Links'] = miembro_stats_df['Links'].apply(int)
 miembro_stats_df = miembro_stats_df.sort_values(by=['Mensajes'], ascending=False)
-miembro_stats_df
+#miembro_stats_df
 
 ###################################
 ###################################
@@ -356,7 +356,7 @@ st.plotly_chart(fig)
 ###################################
 ###################################
 
-"""#### Número de mensajes por día"""
+#### Número de mensajes por día
 
 # Crear una columna de 1 para realizar el conteo de mensajes
 df['# Mensajes por día'] = 1
