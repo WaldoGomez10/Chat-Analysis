@@ -28,8 +28,8 @@ st.markdown("""
 ###################################
 ###################################
 # Título de la aplicación
-st.title('Análisis de nuestro chat de WhatsApp ❤️')
-st.write('Por: Waldo👻')
+st.title('Una historia de 6 años❤️, 🥰Feliz Aniversario🥰')
+st.write('Analísis de nuestro chat de Whatsapp🧐, Por: Waldo👻')
 ###################################
 ###################################
 
@@ -159,7 +159,7 @@ estadistica_df = estadistica_df.set_index('Tipo')
 
 ###################################
 ###################################
-st.header('💡 Estadísticas generales')
+st.header('🙀 Estadísticas generales 🙀')
 col1, col2 = st.columns([1, 2])
 
 with col1:
@@ -294,7 +294,7 @@ miembro_stats_df = miembro_stats_df.sort_values(by=['Mensajes'], ascending=False
 
 ###################################
 ###################################
-st.subheader('Cómo se distribuyen nuestros mensajes 👀')
+st.subheader('👀 Cómo se distribuyen nuestros mensajes 👀')
 st.write(miembro_stats_df)
 ###################################
 ###################################
@@ -303,7 +303,7 @@ st.write(miembro_stats_df)
 
 ###################################
 ###################################
-st.header('🤗 Emojis más usados')
+st.header('🤗 Nuestros emojis más usados 🤗')
 col1, col2 = st.columns([1, 2])
 
 with col1:
@@ -361,7 +361,7 @@ fig.update_yaxes(title_text='# Mensajes')
 
 ###################################
 ###################################
-st.header('⏰ Mensajes por hora')
+st.header('⏰ Nuestros mensajes por hora ⏰')
 st.plotly_chart(fig)
 ###################################
 ###################################
@@ -411,7 +411,7 @@ fig.update_yaxes(title_text='# Mensajes')
 
 ###################################
 ###################################
-st.header('📆 Mensajes por día')
+st.header('📆 Nuestros mensajes por día 📆')
 st.plotly_chart(fig)
 ###################################
 ###################################
@@ -441,7 +441,7 @@ fig.update_yaxes(title_text='# Mensajes')
 
 ###################################
 ###################################
-st.header('📈 Mensajes a lo largo del tiempo')
+st.header('📈 Nuestros mensajes a lo largo del tiempo 📈')
 st.plotly_chart(fig)
 ###################################
 ###################################
@@ -474,7 +474,7 @@ wordcloud = WordCloud(width = 800, height = 800, background_color ='black', stop
 
 ###################################
 ###################################
-st.header('☁️ Nuestro word cloud')
+st.header('☁️ Nuestro word cloud ☁️')
 st.image(wordcloud.to_array(), caption='Las palabras que más usamos ❤️', use_column_width=True)
 ###################################
 ###################################
