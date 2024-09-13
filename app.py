@@ -28,7 +28,7 @@ st.markdown("""
 ###################################
 ###################################
 # Título de la aplicación
-st.title('Una historia de 6 años❤️, 🥰Feliz Aniversario🥰')
+st.title('❤️Una historia de 6 años❤️, 🥰Feliz Aniversario🥰')
 st.write('Analísis de nuestro chat de Whatsapp🧐, Por: Waldo👻')
 ###################################
 ###################################
@@ -296,6 +296,7 @@ miembro_stats_df = miembro_stats_df.sort_values(by=['Mensajes'], ascending=False
 ###################################
 st.subheader('👀 Cómo se distribuyen nuestros mensajes 👀')
 st.write(miembro_stats_df)
+st.write('Waldo siempre tomando la iniciativa👻')
 ###################################
 ###################################
 
@@ -311,6 +312,8 @@ with col1:
 
 with col2:
     st.plotly_chart(fig)
+
+st.write('El corazon al final 😂')
 ###################################
 ###################################
 
@@ -363,6 +366,7 @@ fig.update_yaxes(title_text='# Mensajes')
 ###################################
 st.header('⏰ Nuestros mensajes por hora ⏰')
 st.plotly_chart(fig)
+st.write('Las noches son todo 🥳')
 ###################################
 ###################################
 
@@ -413,6 +417,7 @@ fig.update_yaxes(title_text='# Mensajes')
 ###################################
 st.header('📆 Nuestros mensajes por día 📆')
 st.plotly_chart(fig)
+st.write('Los sabados 😈')
 ###################################
 ###################################
 
@@ -443,6 +448,7 @@ fig.update_yaxes(title_text='# Mensajes')
 ###################################
 st.header('📈 Nuestros mensajes a lo largo del tiempo 📈')
 st.plotly_chart(fig)
+st.write('No hay evidencia de nuestro inicio 😭')
 ###################################
 ###################################
 
@@ -475,6 +481,6 @@ wordcloud = WordCloud(width = 800, height = 800, background_color ='black', stop
 ###################################
 ###################################
 st.header('☁️ Nuestro word cloud ☁️')
-st.image(wordcloud.to_array(), caption='Las palabras que más usamos ❤️', use_column_width=True)
+st.image(wordcloud.to_array(), caption='🫣❤️Las palabras que más usamos❤️🫣', use_column_width=True)
 ###################################
 ###################################
