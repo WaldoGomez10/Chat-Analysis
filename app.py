@@ -15,16 +15,6 @@ from wordcloud import WordCloud, STOPWORDS
 
 import streamlit as st
 
-# Inject custom CSS
-st.markdown("""
-<style>
-.css-18e3th9 {
-    background-color: black;
-    color: white;
-}
-</style>
-""", unsafe_allow_html=True)
-
 ###################################
 ###################################
 # Título de la aplicación
